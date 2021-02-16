@@ -1,21 +1,51 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import {createAppContainer} from 'react-navigation'
+import {createDrawerNavigator} from 'react-navigation-drawer'
+import {Dimensions} from 'react-native'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+import {Feather} from '@expo/vector-icons'
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+import {indexScreen, cadastroScreen, cardScreen} from './screens'
+
+import Sidebar from './components/SideBar.js'
+
+const DrawerNavigator = createDrawerNavigator({
+  indexScreen: {
+    screen: indexScreen,
+    navigationOptions: {
+      title: "Início",
+      drawerIcon: ({ tintColor }) => <Feather name="home" size={16} color={tintColor} />
+    }
   },
-});
+  cadastroScreen:  {
+    screen: cadastroScreen,
+    navigationOptions: {
+      title: "Cadastrar atividade",
+      drawerIcon: ({ tintColor }) => <Feather name="file-text" size={16} color={tintColor} />
+    }
+  },
+  cardScreen: {
+    screen: cardScreen,
+    navigationOptions: {
+      title: "Suas atividades",
+      drawerIcon: ({ tintColor }) => <Feather name="columns" size={16} color={tintColor} />
+    }
+  }
+},
+{
+  contentComponent: props => <Sidebar {...props} />,
+
+  contentOptions: {
+    activeBackgroundColor: "rgba(0, 230, 64, 0.2)",
+    activeTintColor: "#531158",
+    itemsContainerStyle: {
+      marginTop: 16,
+      marginHorizontal: 8
+    },
+    itemStyle: {
+      borderRadius: 4
+    }
+  }
+})
+
+export default createAppContainer(DrawerNavigator)
