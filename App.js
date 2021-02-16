@@ -5,7 +5,11 @@ import {Dimensions} from 'react-native'
 
 import {Feather} from '@expo/vector-icons'
 
-import {indexScreen, cadastroScreen, cardScreen} from './screens'
+import {
+  indexScreen,
+  cadastroScreen,
+  userPostScreen
+} from './screens'
 
 import Sidebar from './components/SideBar.js'
 
@@ -24,11 +28,11 @@ const DrawerNavigator = createDrawerNavigator({
       drawerIcon: ({ tintColor }) => <Feather name="file-text" size={16} color={tintColor} />
     }
   },
-  cardScreen: {
-    screen: cardScreen,
+  userPostScreen: {
+    screen: userPostScreen,
     navigationOptions: {
       title: "Suas atividades",
-      drawerIcon: ({ tintColor }) => <Feather name="columns" size={16} color={tintColor} />
+      drawerIcon: ({ tintColor }) => <Feather name="file-text" size={16} color={tintColor} />
     }
   }
 },

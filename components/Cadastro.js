@@ -36,12 +36,22 @@ export default function Cadastro() {
 
                 <View style={{flexDirection: "row"}}>
                     <RadioButton value="second" />
-                    <Text style={{marginTop: 10}}>Gameficação</Text>
+                    <Text style={{marginTop: 10}}>Aprendizagem em dupla</Text>
                 </View>
 
                 <View style={{flexDirection: "row"}}>
                     <RadioButton value="third" />
+                    <Text style={{marginTop: 10}}>Gameficação</Text>
+                </View>
+
+                <View style={{flexDirection: "row"}}>
+                    <RadioButton value="fourth" />
                     <Text style={{marginTop: 10}}>Sala de aula invertida</Text>
+                </View>
+
+                <View style={{flexDirection: "row"}}>
+                    <RadioButton value="fifth" />
+                    <Text style={{marginTop: 10}}>Tecnologias criativas</Text>
                 </View>
             </RadioButton.Group>
 
@@ -90,4 +100,4 @@ const styles = StyleSheet.create({
         marginTop: 10,
         marginBottom: 5
     }
-  })
+})

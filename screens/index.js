@@ -2,6 +2,7 @@ import React from 'react'
 import Screen from './screen'
 import Inicio from '../components/Inicio'
 import Cadastro from '../components/Cadastro'
+import SuasAtividades from '../components/SuasAtividades'
 
 export const indexScreen = ({navigation}) => 
     <Screen navigation={navigation} name="index">
@@ -9,9 +10,12 @@ export const indexScreen = ({navigation}) =>
     </Screen>
 
 export const cadastroScreen = ({navigation}) => 
-    <Screen navigation={navigation} name="Cadastro">
+    <Screen navigation={navigation} name="cadastro">
         <Cadastro />
     </Screen>
 
-export const cardScreen = ({navigation}) => <Screen navigation={navigation} name="Card" />
+export const userPostScreen = ({navigation}) => 
+    <Screen navigation={navigation} name="userPosts">
+        <SuasAtividades />
+    </Screen>
 

@@ -12,7 +12,7 @@ export default class Screen extends React.Component {
                         <TouchableOpacity 
                         style={{flexDirection: "row", justifyContent: "space-between", margin: 16}}
                         onPress={this.props.navigation.openDrawer}>
-                            <Image source={require('../assets/logo.jpg')} style={styles.logo} />
+                            <Image source={require('../assets/logo_icone.png')} style={styles.logo} />
                             <FontAwesome name="bars" size={24} color="161924"/>
                         </TouchableOpacity>
                     </SafeAreaView>
@@ -36,6 +36,8 @@ const styles = StyleSheet.create({
         fontWeight: "500",
     },
     logo: {
+        marginTop: 3,
+        paddingTop: 1,
         width: 100,
         height: 20,
     }
