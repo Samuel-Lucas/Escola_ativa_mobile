@@ -1,8 +1,7 @@
 import React from 'react'
-import { StyleSheet, Text, View, ImageBackground } from 'react-native'
-import { Button, Card, Title, Paragraph } from 'react-native-paper'
+import { StyleSheet, Text, View, ImageBackground, Button} from 'react-native'
+import { Card, Title, Paragraph } from 'react-native-paper'
 import BootstrapStyleSheet from 'react-native-bootstrap-styles'
-
 
 const bootstrapStyleSheet = new BootstrapStyleSheet()
 const { s } = bootstrapStyleSheet
@@ -29,8 +28,10 @@ export default function Inicio({navigation}) {
                     </Card.Content>
                     <Card.Actions>
                     <Button 
+                    title="Conferir"
+                    color="#00cc00"
                     style={s.btnSuccess}
-                    onPress={() => navigation.navigate('sectionScreen')}>Conferir</Button>
+                    onPress={() => navigation.navigate('sectionScreen')} />
                     </Card.Actions>
                 </Card>
 
@@ -41,7 +42,11 @@ export default function Inicio({navigation}) {
                         <Paragraph style={styles.content}>Confira metodologias ativas para linguagens</Paragraph>
                     </Card.Content>
                     <Card.Actions>
-                    <Button style={s.btnSuccess}>Conferir</Button>
+                    <Button 
+                    title="Conferir"
+                    color="#00cc00"
+                    style={s.btnSuccess}
+                    onPress={() => navigation.navigate('sectionScreen')} />
                     </Card.Actions>
                 </Card>
 
@@ -52,7 +57,11 @@ export default function Inicio({navigation}) {
                         <Paragraph style={styles.content}>Confira metodologias ativas para ciências humanas</Paragraph>
                     </Card.Content>
                     <Card.Actions>
-                    <Button style={s.btnSuccess}>Conferir</Button>
+                    <Button 
+                    title="Conferir"
+                    color="#00cc00"
+                    style={s.btnSuccess}
+                    onPress={() => navigation.navigate('sectionScreen')} />
                     </Card.Actions>
                 </Card>
 

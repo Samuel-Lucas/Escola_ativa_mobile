@@ -9,7 +9,8 @@ import {
   indexScreen,
   cadastroScreen,
   userPostScreen,
-  sectionScreen
+  sectionScreen,
+  quemSomosScreen
 } from './screens'
 
 import Sidebar from './components/SideBar.js'
@@ -20,6 +21,13 @@ const DrawerNavigator = createDrawerNavigator({
     navigationOptions: {
       title: "Início",
       drawerIcon: ({ tintColor }) => <Feather name="home" size={16} color={tintColor} />
+    }
+  },
+  quemSomosScreen: {
+    screen: quemSomosScreen,
+    navigationOptions: {
+      title: "Quem somos",
+      drawerIcon: ({ tintColor }) => <Feather name="info" size={16} color={tintColor} />
     }
   },
   cadastroScreen:  {
