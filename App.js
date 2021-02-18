@@ -9,9 +9,11 @@ import {
   indexScreen,
   cadastroScreen,
   userPostScreen,
-  sectionScreen,
   quemSomosScreen,
-  metodologiasScreen
+  metodologiasScreen,
+  sectionScreen,
+  section2Screen,
+  section3Screen
 } from './screens'
 
 import Sidebar from './components/SideBar.js'
@@ -55,7 +57,19 @@ const DrawerNavigator = createDrawerNavigator({
   sectionScreen: {
     screen: sectionScreen,
     navigationOptions: {
-      tabBarVisible: false
+      title: ""
+    }
+  },
+  section2Screen: {
+    screen: section2Screen,
+    navigationOptions: {
+      title: ""
+    }
+  },
+  section3Screen: {
+    screen: section3Screen,
+    navigationOptions: {
+      title: ""
     }
   }
 },
@@ -63,7 +77,7 @@ const DrawerNavigator = createDrawerNavigator({
   contentComponent: props => <Sidebar {...props} />,
 
   contentOptions: {
-    activeBackgroundColor: "rgba(0, 230, 64, 0.2)",
+    //activeBackgroundColor: "rgba(0, 230, 64, 0.2)",
     activeTintColor: "#531158",
     itemsContainerStyle: {
       marginTop: 16,

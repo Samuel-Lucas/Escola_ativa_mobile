@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View, ImageBackground, Button} from 'react-native'
+import { StyleSheet, Text, View, ImageBackground, Button, TouchableHighlight} from 'react-native'
 import { Card, Title, Paragraph } from 'react-native-paper'
 import BootstrapStyleSheet from 'react-native-bootstrap-styles'
 
@@ -10,12 +10,12 @@ export default function Inicio({navigation}) {
 
     return (
         <>
-            <View style={styles.container}>
-                
-                <ImageBackground source={require('../assets/img_principal.jpg')} style={styles.image}>
+            <TouchableHighlight style={styles.container} onPress={() => navigation.navigate('metodologiasScreen')}>
+                <ImageBackground 
+                source={require('../assets/img_principal.jpg')} style={styles.image}>
                     <Text style={styles.text}>Por que aplicar metodologias ativas ?</Text>
                 </ImageBackground>
-            </View>
+            </TouchableHighlight>
 
             <View style={{flex: 1, alignItems: "center"}}>
                 <Text style={{fontSize: 18, fontWeight: "bold", marginTop: 10}}>Metodologias Ativas</Text>
@@ -46,7 +46,7 @@ export default function Inicio({navigation}) {
                     title="Conferir"
                     color="#00cc00"
                     style={s.btnSuccess}
-                    onPress={() => navigation.navigate('sectionScreen')} />
+                    onPress={() => navigation.navigate('section2Screen')} />
                     </Card.Actions>
                 </Card>
 
@@ -61,7 +61,7 @@ export default function Inicio({navigation}) {
                     title="Conferir"
                     color="#00cc00"
                     style={s.btnSuccess}
-                    onPress={() => navigation.navigate('sectionScreen')} />
+                    onPress={() => navigation.navigate('section3Screen')} />
                     </Card.Actions>
                 </Card>
 
