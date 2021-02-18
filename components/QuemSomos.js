@@ -50,7 +50,6 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 18,
         fontWeight: "bold",
-        textDecorationLine: "underline",
         textAlign: "center",
         marginTop: 20
     },
@@ -60,7 +59,7 @@ const styles = StyleSheet.create({
         marginLeft: 12
     },
     paragraph: {
-        fontSize: 14,
+        fontSize: 15,
         padding: 12,
         marginLeft: 10
     }

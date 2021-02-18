@@ -5,6 +5,7 @@ import Cadastro from '../components/Cadastro'
 import SuasAtividades from '../components/SuasAtividades'
 import Secao from '../components/Secao'
 import QuemSomos from '../components/QuemSomos'
+import MetodologiasAtivas from '../components/MetodologiasAtivas'
 
 export const indexScreen = ({navigation}) => 
     <Screen navigation={navigation} name="index">
@@ -31,3 +32,7 @@ export const quemSomosScreen = ({navigation}) =>
         <QuemSomos />
     </Screen>
 
+export const metodologiasScreen = ({navigation}) => 
+    <Screen navigation={navigation} name="info">
+        <MetodologiasAtivas />
+    </Screen>

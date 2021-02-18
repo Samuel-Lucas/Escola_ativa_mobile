@@ -10,7 +10,8 @@ import {
   cadastroScreen,
   userPostScreen,
   sectionScreen,
-  quemSomosScreen
+  quemSomosScreen,
+  metodologiasScreen
 } from './screens'
 
 import Sidebar from './components/SideBar.js'
@@ -27,6 +28,13 @@ const DrawerNavigator = createDrawerNavigator({
     screen: quemSomosScreen,
     navigationOptions: {
       title: "Quem somos",
+      drawerIcon: ({ tintColor }) => <Feather name="info" size={16} color={tintColor} />
+    }
+  },
+  metodologiasScreen: {
+    screen: metodologiasScreen,
+    navigationOptions: {
+      title: "Por que aplicar metodologias ativas ?",
       drawerIcon: ({ tintColor }) => <Feather name="info" size={16} color={tintColor} />
     }
   },

@@ -5,8 +5,7 @@ import { Card, Title, Paragraph  } from 'react-native-paper'
 export default function SuasAtividades() {
 
     return (
-        <View>
-
+        <View style={{minHeight: 480}}>
             <Text style={styles.title}>Suas Atividades</Text>
 
             <Card style={{width: "85%", alignSelf: "center"}}>
@@ -28,14 +27,14 @@ export default function SuasAtividades() {
                         </View>
                     </View>
 
-                    <Title>Lorem Ipsum</Title>
-                    <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sagittis,
+                    <Title>  Lorem Ipsum</Title>
+                    <Paragraph>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sagittis,
                         quam eget gravida ornare, tortor purus pharetra nunc, nec sodales erat mi sit amet justo.
                         Duis eu felis pretium, faucibus magna quis, molestie odio. Morbi lectus sem, rutrum ultricies nisl in,
                         tincidunt lacinia est.</Paragraph>
                     <TextInput
                     style={{borderWidth: 1, marginTop: 5}}
-                    value = "www.brasilescola.com.br"
+                    value = "Ex: www.brasilescola.com.br"
                     editable = {false}
                     />
                 </View>
