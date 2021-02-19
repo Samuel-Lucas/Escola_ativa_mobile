@@ -14,6 +14,7 @@ import {
   sectionScreen,
   section2Screen,
   section3Screen,
+  section4Screen,
   sairScreen
 } from './screens'
 
@@ -76,6 +77,12 @@ const DrawerNavigator = createDrawerNavigator({
   },
   section3Screen: {
     screen: section3Screen,
+    navigationOptions: {
+      title: ""
+    }
+  },
+  section4Screen: {
+    screen: section4Screen,
     navigationOptions: {
       title: ""
     }

@@ -30,7 +30,6 @@ export default function Inicio({navigation}) {
                     <Button 
                     title="Conferir"
                     color="#00cc00"
-                    style={s.btnSuccess}
                     onPress={() => navigation.navigate('sectionScreen')} />
                     </Card.Actions>
                 </Card>
@@ -45,7 +44,6 @@ export default function Inicio({navigation}) {
                     <Button 
                     title="Conferir"
                     color="#00cc00"
-                    style={s.btnSuccess}
                     onPress={() => navigation.navigate('section2Screen')} />
                     </Card.Actions>
                 </Card>
@@ -60,8 +58,21 @@ export default function Inicio({navigation}) {
                     <Button 
                     title="Conferir"
                     color="#00cc00"
-                    style={s.btnSuccess}
                     onPress={() => navigation.navigate('section3Screen')} />
+                    </Card.Actions>
+                </Card>
+
+                <Card style={styles.card}>
+                    <Card.Cover source={require('../assets/img4.jpg')} />
+                    <Card.Content>
+                        <Title>Ciências da natureza</Title>
+                        <Paragraph style={styles.content}>Confira metodologias ativas para ciências da natureza</Paragraph>
+                    </Card.Content>
+                    <Card.Actions>
+                    <Button 
+                    title="Conferir"
+                    color="#00cc00"
+                    onPress={() => navigation.navigate('section4Screen')} />
                     </Card.Actions>
                 </Card>
 
