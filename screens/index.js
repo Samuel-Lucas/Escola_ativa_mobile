@@ -1,5 +1,5 @@
 import React from 'react'
-import Screen from './screen'
+import Screen from './Screen'
 import Inicio from '../components/Inicio'
 import Cadastro from '../components/Cadastro'
 import SuasAtividades from '../components/SuasAtividades'
