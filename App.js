@@ -13,7 +13,8 @@ import {
   metodologiasScreen,
   sectionScreen,
   section2Screen,
-  section3Screen
+  section3Screen,
+  sairScreen
 } from './screens'
 
 import Sidebar from './components/SideBar.js'
@@ -52,6 +53,13 @@ const DrawerNavigator = createDrawerNavigator({
     navigationOptions: {
       title: "Suas atividades",
       drawerIcon: ({ tintColor }) => <Feather name="file-text" size={16} color={tintColor} />
+    }
+  },
+  sairScreen: {
+    screen: sairScreen,
+    navigationOptions: {
+      title: "Sair",
+      drawerIcon: ({ tintColor }) => <Feather name="log-out" size={16} color={tintColor} />
     }
   },
   sectionScreen: {

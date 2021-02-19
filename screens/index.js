@@ -8,6 +8,7 @@ import MetodologiasAtivas from '../components/MetodologiasAtivas'
 import Secao from '../components/Secao'
 import Secao2 from '../components/Secao2'
 import Secao3 from '../components/Secao3'
+import Sair from '../components/Sair'
 
 export const indexScreen = ({navigation}) => 
     <Screen navigation={navigation} name="index">
@@ -47,4 +48,9 @@ export const section2Screen = ({navigation}) =>
 export const section3Screen = ({navigation}) => 
     <Screen navigation={navigation} name="section3">
         <Secao3 />
+    </Screen>
+
+export const sairScreen = ({navigation}) => 
+    <Screen navigation={navigation} name="sair">
+        <Sair />
     </Screen>

@@ -7,10 +7,15 @@ export default function Sidebar (props) {
 
     return (
         <ScrollView>
-            <View>
+            <ImageBackground source={require("../assets/bg_profile.jpg")} style={styles.back}>
                 <Image source={require('../assets/perfil.png')} style={styles.profile} />
-                <Text style={styles.text}>Samuel Lucas</Text>
-            </View>
+                <Text style={styles.name}>Samuel Lucas</Text>
+
+                <View stlye={{flexDirection: "row"}}>
+                    <Text style={styles.perfil}>Coordenador pedagógico</Text>
+
+                </View>
+            </ImageBackground>
 
             <View style={styles.container}>
                 <DrawerNavigatorItems {...props} />
@@ -23,16 +28,27 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
     },
+    back: {
+        width: undefined,
+        padding: 16,
+        paddingTop: 40
+    },
     profile: {
         width: 80,
         height: 80,
         borderRadius: 40,
-        borderWidth: "gray",
+        borderWidth: 3,
+        borderColor: "gray"
     },
-    text: {
-        color: "#333",
+    name: {
+        color: "#fff",
         fontSize: 20,
-        fontWeight: "800",
+        fontWeight: "700",
         marginVertical: 8
+    },
+    perfil: {
+        color: "rgba(255, 255, 255, 0.8)",
+        fontSize: 14,
+        marginRight: 4
     }
 })
