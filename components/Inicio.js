@@ -1,10 +1,6 @@
 import React from 'react'
-import { StyleSheet, Text, View, ImageBackground, Button, TouchableHighlight} from 'react-native'
+import { StyleSheet, Text, View, ImageBackground, Button, TouchableHighlight, TouchableOpacity} from 'react-native'
 import { Card, Title, Paragraph } from 'react-native-paper'
-import BootstrapStyleSheet from 'react-native-bootstrap-styles'
-
-const bootstrapStyleSheet = new BootstrapStyleSheet()
-const { s } = bootstrapStyleSheet
 
 export default function Inicio({navigation}) {
 
@@ -18,7 +14,9 @@ export default function Inicio({navigation}) {
             </TouchableHighlight>
 
             <View style={{flex: 1, alignItems: "center"}}>
-                <Text style={{fontSize: 18, fontWeight: "bold", marginTop: 10}}>Metodologias Ativas</Text>
+                <Text style={{fontSize: 18, fontWeight: "bold", marginTop: 20, marginBottom: 15}}>
+                    Metodologias Ativas
+                </Text>
 
                 <Card style={styles.card}>
                     <Card.Cover source={require('../assets/img1.jpg')} />
@@ -76,36 +74,31 @@ export default function Inicio({navigation}) {
                     </Card.Actions>
                 </Card>
 
-                <Text style={{fontSize: 18, fontWeight: "bold", textAlign: "center", marginTop: 10}}>
-                    Comunidade escola ativa: Juntos somos mais Fortes !
+                <Text style={{fontSize: 18, fontWeight: "bold", textAlign: "center", marginTop: 25, marginBottom: 15}}>
+                    Grau de Escolaridade
                 </Text>
 
-                <Card style={styles.card}>
-                    <Card.Cover source={require('../assets/ensinoFundamental.png')} />
-                    <Card.Content>
-                        <Paragraph style={styles.content}>Confira metodologias ativas para o ensino fundamental</Paragraph>
-                    </Card.Content>
-                </Card>
+                <TouchableOpacity style={{paddingLeft: 15, width: "80%"}} onPress={() => navigation.navigate('ensinoScreen')}>
+                    <View>
+                        <View>
+                            <Title style={styles.title}>Ensino fundamental</Title>
+                        </View>
+                        <Card.Cover source={require('../assets/ensinoFundamental.png')} />
+                    </View>
+                </TouchableOpacity>
 
                 <Card style={styles.card}>
+                    <Card.Content>
+                        <Title style={styles.title}>Ensino médio</Title>
+                    </Card.Content>
                     <Card.Cover source={require('../assets/ensinoMedio.png')} />
-                    <Card.Content>
-                        <Paragraph style={styles.content}>Confira metodologias ativas para o ensino médio</Paragraph>
-                    </Card.Content>
                 </Card>
 
                 <Card style={styles.card}>
+                    <Card.Content>
+                        <Title style={styles.title}>EJA</Title>
+                    </Card.Content>
                     <Card.Cover source={require('../assets/ensinoEAD.png')} />
-                    <Card.Content>
-                        <Paragraph style={styles.content}>Confira metodologias ativas para o ensino a distância</Paragraph>
-                    </Card.Content>
-                </Card>
-
-                <Card style={styles.card}>
-                    <Card.Cover source={require('../assets/boasPraticas.png')} />
-                    <Card.Content>
-                        <Paragraph style={styles.content}>Confira Boas práticas</Paragraph>
-                    </Card.Content>
                 </Card>
             </View>
         </>
@@ -137,5 +130,9 @@ const styles = StyleSheet.create({
     },
     content: {
         fontSize: 16
+    },
+    title: {
+        fontSize: 16,
+        fontWeight: "bold"
     }
   })

@@ -9,6 +9,7 @@ import Secao from '../components/Secao'
 import Secao2 from '../components/Secao2'
 import Secao3 from '../components/Secao3'
 import Secao4 from '../components/Secao4'
+import EnsinoFundamental from '../components/EnsinoFundamental'
 import Sair from '../components/Sair'
 
 export const indexScreen = ({navigation}) => 
@@ -54,6 +55,11 @@ export const section3Screen = ({navigation}) =>
 export const section4Screen = ({navigation}) => 
     <Screen navigation={navigation} name="section4">
         <Secao4 />
+    </Screen>
+
+export const ensinoScreen = ({navigation}) => 
+    <Screen navigation={navigation} name="ensinoFundamental">
+        <EnsinoFundamental />
     </Screen>
 
 export const sairScreen = ({navigation}) => 

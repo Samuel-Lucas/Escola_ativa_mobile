@@ -16,9 +16,10 @@ export default function Cadastro() {
 
             <Picker
                 selectedValue={selectedValue}
-                style={{ height: 30, width: 185, margin: 18 }}
+                style={{ height: 30, width: 205, margin: 18 }}
                 onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
             >
+                <Picker.Item label="Selecione uma disciplina" value="" />
                 <Picker.Item label="Matemática" value="matematica" />
                 <Picker.Item label="Linguagens" value="linguagens" />
                 <Picker.Item label="Ciências Humanas" value="ch" />

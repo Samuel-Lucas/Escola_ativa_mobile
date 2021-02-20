@@ -1,8 +1,6 @@
 import React from 'react'
 import {createAppContainer} from 'react-navigation'
 import {createDrawerNavigator} from 'react-navigation-drawer'
-import {Dimensions} from 'react-native'
-
 import {Feather} from '@expo/vector-icons'
 
 import {
@@ -15,6 +13,7 @@ import {
   section2Screen,
   section3Screen,
   section4Screen,
+  ensinoScreen,
   sairScreen
 } from './screens'
 
@@ -77,6 +76,12 @@ const DrawerNavigator = createDrawerNavigator({
   },
   section3Screen: {
     screen: section3Screen,
+    navigationOptions: {
+      title: ""
+    }
+  },
+  ensinoScreen: {
+    screen: ensinoScreen,
     navigationOptions: {
       title: ""
     }
