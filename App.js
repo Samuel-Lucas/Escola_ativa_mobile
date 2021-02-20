@@ -80,14 +80,14 @@ const DrawerNavigator = createDrawerNavigator({
       title: ""
     }
   },
-  ensinoScreen: {
-    screen: ensinoScreen,
+  section4Screen: {
+    screen: section4Screen,
     navigationOptions: {
       title: ""
     }
   },
-  section4Screen: {
-    screen: section4Screen,
+  ensinoScreen: {
+    screen: ensinoScreen,
     navigationOptions: {
       title: ""
     }
