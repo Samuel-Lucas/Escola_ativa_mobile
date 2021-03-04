@@ -4,38 +4,91 @@ import { Paragraph } from 'react-native-paper'
 
 export default function MetodologiasAtivas() {
 
-    const imagem = require('../assets/quem_somos.jpeg')
+    const imagem = require('../assets/atividade.jpg')
     const piramide_aprendizado = require('../assets/piramide_aprendizado.png')
 
     return (
         <View>
             <Image source={imagem} style={styles.image} />
-            <Text style={styles.title}>Por que aplicar metodologias ativas ?</Text>
+            <Text style={styles.title}>metodologias ativas</Text>
 
-            <Paragraph style={styles.paragraph}>  <Text style={styles.emphasis}>A metodologia ativa</Text> de 
-            aprendizagem é uma ruptura brusca com as concepções de ensino mais comumente encontradas nas escolas.
-             Nela, o lugar do aluno não é na plateia, assistindo passivamente à própria educação acontecer.
-            Aqui a participação do estudante é protagonista, e o aprendizado não acontece sem ela. O aluno não fica
-            sentado ouvindo e anotando, ele debate, critica, faz. Ele ajuda a construir o conhecimento junto com o
-            professor e com os colegas.</Paragraph>
+            <Paragraph style={styles.paragraph}>A Metodologia Ativa de Aprendizagem pode englobar diferentes
+            práticas dentro e fora da sala de aula. Pois possui como principal característica a inserção do aluno
+            como protagonista da própria aprendizagem, permitindo-os reconhecer os recursos que melhor funcionam
+            para si, enxergar o professor como um companheiro de sua jornada e não uma figura detentora e repassador de conhecimento.
+            Para auxiliar os alunos em sua descoberta dos recursos que melhor funcionam para si. Os professores
+            precisam propor uma atividade que tenha um objetivo bem definido, aliado a uma proposta metodológica 
+            adequada. Pensando nisso, iremos descrever alguns dos tipos de Metodologia Ativa de Apendizagem:</Paragraph>
 
-            <Paragraph style={styles.paragraph}>  A forma como o aprendizado é processado pelo cérebro se altera completamente dessa maneira.
-            Conforme a pirâmide do aprendizado de Willian Glasser, aprendemos 80% a mais quando fazemos,
-            e 95% quando ensinamos. Já quando temos papel passivo, o percentual é bem menor: 10% quando lemos,
-            20% quando escutamos, 30% quando observamos e 50% quando vemos e ouvimos ao mesmo tempo.</Paragraph>
+            <Text style={styles.title}>{'\u2B24'} Aprendizagem baseada em projetos (ABP)</Text>
 
-            <Image source={piramide_aprendizado} style={styles.image2} />
+            <Paragraph style={styles.paragraph}>A aprendizagem baseada em projetos (ABP), (do inglês, project
+            based learning (PBL)) – auxilia os alunos na construção de soluções colaborativas de desafios, a fim de
+            desenvolver a criação e exploração de soluções, assim como um senso crítico e investigativo.
+            Na ABP, os alunos devem buscar explorar as possíveis soluções por si mesmo, pois o professor não deve
+            revelar todo o conteudo de ensino, para que os alunos possam alcançar os propósitos de aprendizado 
+            propostos.</Paragraph>
 
-            <Paragraph style={styles.paragraph2}>  Aproveite nossa comunidade utilizando e se inspirando e compartilhando
-            ferramentas gratuitas, materiais e conteúdos de fácil utilização, projetos com materiais domésticos e reciclados
-            para tornar a sua aula mais efetiva em retenção de conteúdo, mais colaborativa e alavancar os índices
-            de aprendizagem.</Paragraph>
+            <View style={{width: "80%", alignSelf: "center"}}>
+                <Paragraph style={{fontSize: 15}}>1.  O professor apresenta um problema</Paragraph>
+                <Paragraph style={{fontSize: 15}}>2.  Os alunos investigam as causas</Paragraph>
+                <Paragraph style={{fontSize: 15}}>3.  Com base em suas vivências, os alunos elaboram um plano</Paragraph>
+                <Paragraph style={{fontSize: 15}}>4.  Apresentam o plano</Paragraph>
+                <Paragraph style={{fontSize: 15}}>5.  O professor fornece feedbacks dos erros e acertos durante o processo</Paragraph>
+            </View>
 
-            <Paragraph style={styles.paragraph2}>  Escolas públicas necessitam de métodos que gerem valor a um custo
-            reduzido ou nulo, com aulas dentro da realidade dos nossos alunos considerando suas particularidades,
-            demandas e atenção plena.</Paragraph>
+            <Text style={styles.title}>{'\u2B24'} Aprendizagem baseada em problemas (ABP)</Text>
 
-            <Text style={styles.finalTitle}>Juntos podemos fazer essa transformação !</Text>
+            <Paragraph style={styles.paragraph}>  Na Aprendizagem baseada em problemas, os alunos devem ser capazes de construir um aprendizado
+            conceitual, na qual os alunos se reúne em grupos e debatem sobre um problema para encontrar soluções.
+            A diferença entre a Aprendizagem Baseada Em Projetos é que a ABP exige que os alunos coloquem a mão na
+            massa, já na aprendizagem baseada em problemas, os alunos focam na resolução teórica dos casos.</Paragraph>
+
+            <Text style={styles.title}>{'\u2B24'} Gamificação</Text>
+
+            <Paragraph style={styles.paragraph}>  A gamificação é a utilização de mecânicas e dinâmicas de jogos para
+            engajar pessoas, resolver problemas de modo criativo, melhorar o aprendizado e comportamentos em
+            ambientes fora do contexto de jogos.
+            Cabe ao professor gamificar aspectos normais da sala de aula, de forma, dinâmica, atrativa e 
+            nteligente para conquistar um maior engajamento dos alunos, mantendo o aprofundamento didático.</Paragraph>
+
+            <Text style={styles.title}>{'\u2B24'} Sala de aula invertida</Text>
+
+            <Paragraph style={styles.paragraph}>  Se no modelo tradicional o professor em uma aula expositiva 
+            explica a matéria no quadro para que depois os alunos façam, sozinhos, a lição de casa.
+            A sala de aula invertida (do inglês, flipped classroom) significa a inversão desta lógica:
+            Primeiro o aluno faz a internalização dos conceitos essenciais antes de aula e depois, junto à turma,
+            discute os conhecimentos adquiridos e tira possíveis dúvidas de conteúdo com a ajuda e orientação do 
+            professor.</Paragraph>
+
+            <View style={{ alignSelf: "center", width: "80%", marginTop: 15, marginBottom: 15}}>
+                <Text style={{fontSize: 15, paddingBottom: 10}}>1. Baseado no tema proposto os alunos fazem as pesquisas</Text>
+                <Image source={require('../assets/pesquisa_alunos.png')} style={styles.alunos} />
+            </View>
+
+            <View style={{ alignSelf: "center", width: "80%", marginTop: 15, marginBottom: 15}}>
+                <Text style={{fontSize: 15, paddingBottom: 10}}>2. Discutir em grupo sobre as informações encontradas</Text>
+                <Image source={require('../assets/discursao_grupo.png')} style={styles.alunos} />
+            </View>
+
+            <View style={{ alignSelf: "center", width: "80%", marginTop: 15, marginBottom: 15}}>
+                <Text style={{fontSize: 15, paddingBottom: 10}}>3. Desenvolvem apresentações sobre as discussões</Text>
+                <Image source={require('../assets/apresentacao.png')} style={styles.alunos} />
+            </View>
+
+            <Text style={styles.title}>{'\u2B24'} Aprendizagem Entre Pares</Text>
+
+            <Paragraph style={styles.paragraph}>A aprendizagem entre pares e times (do inglês, Peer Instruction (PI) ou team based learning (TBL)),
+            se baseia no compartilhamento de ideias, por meio da formação de duplas ou equipes para resolver um projeto ou 
+            estudo de caso. Na qual, tem se mostrado extremamente benéfica, pois com a ajuda mútua dos alunos é possível
+            aprender e ensinar ao mesmo tempo, tornando mais simples a compreensão dos alunos, além de, promover a formação 
+            do pensamento crítico e a capacidade de respeitarem opiniões divergentes.</Paragraph>
+
+            <View style={{width: "85%", alignSelf: "center", justifyContent: "flex-start"}}>
+                <Paragraph style={{fontSize: 14}}>Fonte:guiadocente.com.br/sala-de-aula-invertida-na-pratica</Paragraph>
+                <Paragraph style={{fontSize: 14}}>Fonte:desafiosdaeducacao.grupoa.com.br/metodologias-ativas</Paragraph>
+                <Paragraph style={{fontSize: 14}}>Fonte:blog.lyceum.com.br/metodologias-ativas-de-aprendizagem</Paragraph>
+            </View>
         </View>
     )
 }
@@ -83,5 +136,9 @@ const styles = StyleSheet.create({
         fontWeight: "bold",
         textAlign: "center",
         marginBottom: 5
+    },
+    alunos: {
+        width: "100%",
+        height: 200,
     }
 })
